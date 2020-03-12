@@ -1,0 +1,13 @@
+.rnd {
+  border-radius: 8px;
+}
+
+
+.code:first-child {
+  border-radius: 8px;
+}
+
+.code pre {
+  padding: 16px;
+  margin-bottom: 0px;
+}

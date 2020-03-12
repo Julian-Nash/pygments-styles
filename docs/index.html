@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/pygments_styles/abap.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/algol.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/algol_nu.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/arduino.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/autumn.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/borland.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/bw.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/colorful.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/default.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/emacs.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/friendly.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/fruity.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/igor.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/inkpot.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/lovelace.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/manni.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/monokai.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/murphy.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/native.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/paraiso-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/paraiso-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/pastie.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/perldoc.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/rainbow_dash.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/rrt.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/sas.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/solarized-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/solarized-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/tango.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/trac.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/vim.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/vs.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/xcode.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title></title>
+  </head>
+  <body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white text-monospace ">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="/">pygments</a>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="https://pygments.org/" target="_blank">Docs</a>
+        <a class="nav-item nav-link" href="https://pypi.org/project/Pygments/" target="_blank">Pypi</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+    <main>
+
+      
+
+<div class="container pt-3">
+  <div class="row" id="styles">
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/abap.html">Abap</a></h6>
+        <div class="code">
+<div class="abap"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/algol.html">Algol</a></h6>
+        <div class="code">
+<div class="algol"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/algol_nu.html">Algol_nu</a></h6>
+        <div class="code">
+<div class="algol_nu"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/arduino.html">Arduino</a></h6>
+        <div class="code">
+<div class="arduino"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/autumn.html">Autumn</a></h6>
+        <div class="code">
+<div class="autumn"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/borland.html">Borland</a></h6>
+        <div class="code">
+<div class="borland"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/bw.html">Bw</a></h6>
+        <div class="code">
+<div class="bw"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/colorful.html">Colorful</a></h6>
+        <div class="code">
+<div class="colorful"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/default.html">Default</a></h6>
+        <div class="code">
+<div class="default"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/emacs.html">Emacs</a></h6>
+        <div class="code">
+<div class="emacs"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/friendly.html">Friendly</a></h6>
+        <div class="code">
+<div class="friendly"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/fruity.html">Fruity</a></h6>
+        <div class="code">
+<div class="fruity"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/igor.html">Igor</a></h6>
+        <div class="code">
+<div class="igor"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/inkpot.html">Inkpot</a></h6>
+        <div class="code">
+<div class="inkpot"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/lovelace.html">Lovelace</a></h6>
+        <div class="code">
+<div class="lovelace"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/manni.html">Manni</a></h6>
+        <div class="code">
+<div class="manni"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/monokai.html">Monokai</a></h6>
+        <div class="code">
+<div class="monokai"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/murphy.html">Murphy</a></h6>
+        <div class="code">
+<div class="murphy"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/native.html">Native</a></h6>
+        <div class="code">
+<div class="native"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/paraiso-dark.html">Paraiso-dark</a></h6>
+        <div class="code">
+<div class="paraiso-dark"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/paraiso-light.html">Paraiso-light</a></h6>
+        <div class="code">
+<div class="paraiso-light"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/pastie.html">Pastie</a></h6>
+        <div class="code">
+<div class="pastie"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/perldoc.html">Perldoc</a></h6>
+        <div class="code">
+<div class="perldoc"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/rainbow_dash.html">Rainbow_dash</a></h6>
+        <div class="code">
+<div class="rainbow_dash"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/rrt.html">Rrt</a></h6>
+        <div class="code">
+<div class="rrt"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/sas.html">Sas</a></h6>
+        <div class="code">
+<div class="sas"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/solarized-dark.html">Solarized-dark</a></h6>
+        <div class="code">
+<div class="solarized-dark"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/solarized-light.html">Solarized-light</a></h6>
+        <div class="code">
+<div class="solarized-light"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/stata.html">Stata</a></h6>
+        <div class="code">
+<div class="stata"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/stata-dark.html">Stata-dark</a></h6>
+        <div class="code">
+<div class="stata-dark"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/stata-light.html">Stata-light</a></h6>
+        <div class="code">
+<div class="stata-light"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/tango.html">Tango</a></h6>
+        <div class="code">
+<div class="tango"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/trac.html">Trac</a></h6>
+        <div class="code">
+<div class="trac"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/vim.html">Vim</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/vs.html">Vs</a></h6>
+        <div class="code">
+<div class="vs"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+      <div class="col-sm-12 col-md-6 mb-3">
+  <div class="card shadow-sm border-0 rnd">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a href="/xcode.html">Xcode</a></h6>
+        <div class="code">
+<div class="xcode"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+
+
+    </main>
+
+    
+  </body>
+</html>

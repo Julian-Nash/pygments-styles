@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/pygments_styles/abap.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/algol.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/algol_nu.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/arduino.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/autumn.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/borland.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/bw.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/colorful.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/default.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/emacs.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/friendly.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/fruity.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/igor.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/inkpot.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/lovelace.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/manni.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/monokai.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/murphy.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/native.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/paraiso-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/paraiso-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/pastie.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/perldoc.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/rainbow_dash.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/rrt.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/sas.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/solarized-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/solarized-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/tango.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/trac.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/vim.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/vs.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/xcode.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white text-monospace ">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="/">{% block navloc %}pygments{% endblock %}</a>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="https://pygments.org/" target="_blank">Docs</a>
+        <a class="nav-item nav-link" href="https://pypi.org/project/Pygments/" target="_blank">Pypi</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+    <main>
+
+      {% block main %}{% endblock %}
+
+    </main>
+
+    {% block script %}{% endblock %}
+  </body>
+</html>

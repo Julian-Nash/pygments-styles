@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block navloc %}pygments/{{ style }}{% endblock %}
+
+{% block main %}
+
+<div class="container pt-3">
+  <div class="row" id="styles">
+    <div class="d-none d-md-block col-md-2">
+      <ul class="text-monospace">
+        {% for lang in langs %}
+          <li><a href="#{{ lang.language }}" class="small">{{ lang.language|capitalize }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+      <div class="col-sm-10">
+        {% for lang in langs %}
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#{{ lang.language }}">{{ lang.language|capitalize }}</a></h6>
+        <div class="code">
+{{ lang.gen_html()|safe }}
+      </div>
+    </div>
+  </div>
+
+    {% endfor %}
+        </div>
+  </div>
+</div>
+
+{% endblock %}

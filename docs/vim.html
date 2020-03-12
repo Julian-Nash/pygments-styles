@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/pygments_styles/abap.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/algol.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/algol_nu.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/arduino.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/autumn.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/borland.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/bw.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/colorful.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/default.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/emacs.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/friendly.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/fruity.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/igor.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/inkpot.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/lovelace.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/manni.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/monokai.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/murphy.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/native.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/paraiso-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/paraiso-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/pastie.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/perldoc.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/rainbow_dash.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/rrt.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/sas.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/solarized-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/solarized-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata-dark.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/stata-light.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/tango.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/trac.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/vim.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/vs.css">
+    <link rel="stylesheet" href="static/css/pygments_styles/xcode.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title></title>
+  </head>
+  <body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white text-monospace ">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="/">pygments/vim</a>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="https://pygments.org/" target="_blank">Docs</a>
+        <a class="nav-item nav-link" href="https://pypi.org/project/Pygments/" target="_blank">Pypi</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+    <main>
+
+      
+
+<div class="container pt-3">
+  <div class="row" id="styles">
+    <div class="d-none d-md-block col-md-2">
+      <ul class="text-monospace">
+        
+          <li><a href="#cpp" class="small">Cpp</a></li>
+        
+          <li><a href="#erlang" class="small">Erlang</a></li>
+        
+          <li><a href="#java" class="small">Java</a></li>
+        
+          <li><a href="#javascript" class="small">Javascript</a></li>
+        
+          <li><a href="#php" class="small">Php</a></li>
+        
+          <li><a href="#python" class="small">Python</a></li>
+        
+          <li><a href="#ruby" class="small">Ruby</a></li>
+        
+          <li><a href="#rust" class="small">Rust</a></li>
+        
+          <li><a href="#sh" class="small">Sh</a></li>
+        
+          <li><a href="#typescript" class="small">Typescript</a></li>
+        
+      </ul>
+    </div>
+
+      <div class="col-sm-10">
+        
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#cpp">Cpp</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> *</span>
+<span class="cm"> * Copyright 2018 gRPC authors.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="cm"> * you may not use this file except in compliance with the License.</span>
+<span class="cm"> * You may obtain a copy of the License at</span>
+<span class="cm"> *</span>
+<span class="cm"> *     http://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="cm"> *</span>
+<span class="cm"> * Unless required by applicable law or agreed to in writing, software</span>
+<span class="cm"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="cm"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="cm"> * See the License for the specific language governing permissions and</span>
+<span class="cm"> * limitations under the License.</span>
+<span class="cm"> *</span>
+<span class="cm"> */</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;grpc/support/port_platform.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;src/cpp/server/channelz/channelz_service.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;grpc/grpc.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;grpc/support/alloc.h&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">grpc</span> <span class="p">{</span>
+
+<span class="k">namespace</span> <span class="p">{</span>
+
+<span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">ParseJson</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span><span class="p">,</span>
+                                       <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">Message</span><span class="o">*</span> <span class="n">message</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">json</span><span class="o">::</span><span class="n">JsonParseOptions</span> <span class="n">options</span><span class="p">;</span>
+  <span class="n">options</span><span class="p">.</span><span class="n">case_insensitive_enum_parsing</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">json</span><span class="o">::</span><span class="n">JsonStringToMessage</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">options</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">}</span>  <span class="c1">// namespace</span>
+
+<span class="n">Status</span> <span class="n">ChannelzService</span><span class="o">::</span><span class="n">GetTopChannels</span><span class="p">(</span>
+    <span class="n">ServerContext</span><span class="o">*</span> <span class="cm">/*unused*/</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetTopChannelsRequest</span><span class="o">*</span> <span class="n">request</span><span class="p">,</span>
+    <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetTopChannelsResponse</span><span class="o">*</span> <span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">grpc_channelz_get_top_channels</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">start_channel_id</span><span class="p">());</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">json_str</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span>
+                  <span class="s">&quot;grpc_channelz_get_top_channels returned null&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ParseJson</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+  <span class="n">gpr_free</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">Status</span><span class="o">::</span><span class="n">OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Status</span> <span class="n">ChannelzService</span><span class="o">::</span><span class="n">GetServers</span><span class="p">(</span>
+    <span class="n">ServerContext</span><span class="o">*</span> <span class="cm">/*unused*/</span><span class="p">,</span> <span class="k">const</span> <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetServersRequest</span><span class="o">*</span> <span class="n">request</span><span class="p">,</span>
+    <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetServersResponse</span><span class="o">*</span> <span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">grpc_channelz_get_servers</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">start_server_id</span><span class="p">());</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">json_str</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span>
+                  <span class="s">&quot;grpc_channelz_get_servers returned null&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ParseJson</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+  <span class="n">gpr_free</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">Status</span><span class="o">::</span><span class="n">OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Status</span> <span class="n">ChannelzService</span><span class="o">::</span><span class="n">GetServer</span><span class="p">(</span><span class="n">ServerContext</span><span class="o">*</span> <span class="cm">/*unused*/</span><span class="p">,</span>
+                                  <span class="k">const</span> <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetServerRequest</span><span class="o">*</span> <span class="n">request</span><span class="p">,</span>
+                                  <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetServerResponse</span><span class="o">*</span> <span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">grpc_channelz_get_server</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">server_id</span><span class="p">());</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">json_str</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span>
+                  <span class="s">&quot;grpc_channelz_get_server returned null&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ParseJson</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+  <span class="n">gpr_free</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">Status</span><span class="o">::</span><span class="n">OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Status</span> <span class="n">ChannelzService</span><span class="o">::</span><span class="n">GetServerSockets</span><span class="p">(</span>
+    <span class="n">ServerContext</span><span class="o">*</span> <span class="cm">/*unused*/</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetServerSocketsRequest</span><span class="o">*</span> <span class="n">request</span><span class="p">,</span>
+    <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetServerSocketsResponse</span><span class="o">*</span> <span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">grpc_channelz_get_server_sockets</span><span class="p">(</span>
+      <span class="n">request</span><span class="o">-&gt;</span><span class="n">server_id</span><span class="p">(),</span> <span class="n">request</span><span class="o">-&gt;</span><span class="n">start_socket_id</span><span class="p">(),</span> <span class="n">request</span><span class="o">-&gt;</span><span class="n">max_results</span><span class="p">());</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">json_str</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span>
+                  <span class="s">&quot;grpc_channelz_get_server_sockets returned null&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ParseJson</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+  <span class="n">gpr_free</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">Status</span><span class="o">::</span><span class="n">OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Status</span> <span class="n">ChannelzService</span><span class="o">::</span><span class="n">GetChannel</span><span class="p">(</span>
+    <span class="n">ServerContext</span><span class="o">*</span> <span class="cm">/*unused*/</span><span class="p">,</span> <span class="k">const</span> <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetChannelRequest</span><span class="o">*</span> <span class="n">request</span><span class="p">,</span>
+    <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetChannelResponse</span><span class="o">*</span> <span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">grpc_channelz_get_channel</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">channel_id</span><span class="p">());</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">json_str</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">NOT_FOUND</span><span class="p">,</span> <span class="s">&quot;No object found for that ChannelId&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ParseJson</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+  <span class="n">gpr_free</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">Status</span><span class="o">::</span><span class="n">OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Status</span> <span class="n">ChannelzService</span><span class="o">::</span><span class="n">GetSubchannel</span><span class="p">(</span>
+    <span class="n">ServerContext</span><span class="o">*</span> <span class="cm">/*unused*/</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetSubchannelRequest</span><span class="o">*</span> <span class="n">request</span><span class="p">,</span>
+    <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetSubchannelResponse</span><span class="o">*</span> <span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">grpc_channelz_get_subchannel</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">subchannel_id</span><span class="p">());</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">json_str</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">NOT_FOUND</span><span class="p">,</span>
+                  <span class="s">&quot;No object found for that SubchannelId&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ParseJson</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+  <span class="n">gpr_free</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">Status</span><span class="o">::</span><span class="n">OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Status</span> <span class="n">ChannelzService</span><span class="o">::</span><span class="n">GetSocket</span><span class="p">(</span><span class="n">ServerContext</span><span class="o">*</span> <span class="cm">/*unused*/</span><span class="p">,</span>
+                                  <span class="k">const</span> <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetSocketRequest</span><span class="o">*</span> <span class="n">request</span><span class="p">,</span>
+                                  <span class="n">channelz</span><span class="o">::</span><span class="n">v1</span><span class="o">::</span><span class="n">GetSocketResponse</span><span class="o">*</span> <span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">char</span><span class="o">*</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">grpc_channelz_get_socket</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">socket_id</span><span class="p">());</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">json_str</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">NOT_FOUND</span><span class="p">,</span> <span class="s">&quot;No object found for that SocketId&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="n">grpc</span><span class="o">::</span><span class="n">protobuf</span><span class="o">::</span><span class="n">util</span><span class="o">::</span><span class="n">Status</span> <span class="n">s</span> <span class="o">=</span> <span class="n">ParseJson</span><span class="p">(</span><span class="n">json_str</span><span class="p">,</span> <span class="n">response</span><span class="p">);</span>
+  <span class="n">gpr_free</span><span class="p">(</span><span class="n">json_str</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">s</span><span class="p">.</span><span class="n">ok</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">Status</span><span class="p">(</span><span class="n">StatusCode</span><span class="o">::</span><span class="n">INTERNAL</span><span class="p">,</span> <span class="n">s</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">Status</span><span class="o">::</span><span class="n">OK</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">}</span>  <span class="c1">// namespace grpc</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#erlang">Erlang</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="c">%%%-------------------------------------------------------------------</span>
+<span class="c">%%% @author tihon</span>
+<span class="c">%%% @copyright (C) 2016, &lt;COMPANY&gt;</span>
+<span class="c">%%% @doc</span>
+<span class="c">%%% Api helper module. You can use it as an example for your own api</span>
+<span class="c">%%% to mongoc, as not all parameters are passed.</span>
+<span class="c">%%% @end</span>
+<span class="c">%%% Created : 19. Jan 2016 16:04</span>
+<span class="c">%%%-------------------------------------------------------------------</span>
+<span class="p">-</span><span class="ni">module</span><span class="p">(</span><span class="n">mongo_api</span><span class="p">).</span>
+<span class="p">-</span><span class="ni">author</span><span class="p">(</span><span class="s">&quot;tihon&quot;</span><span class="p">).</span>
+
+<span class="p">-</span><span class="ni">include</span><span class="p">(</span><span class="s">&quot;mongoc.hrl&quot;</span><span class="p">).</span>
+<span class="p">-</span><span class="ni">include</span><span class="p">(</span><span class="s">&quot;mongo_protocol.hrl&quot;</span><span class="p">).</span>
+
+<span class="c">%% API</span>
+<span class="p">-</span><span class="ni">export</span><span class="p">([</span>
+  <span class="n">connect</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span>
+  <span class="n">insert</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span>
+  <span class="n">find</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="n">find</span><span class="o">/</span><span class="mi">6</span><span class="p">,</span>
+  <span class="n">find_one</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="n">find_one</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span>
+  <span class="n">update</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span>
+  <span class="n">delete</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span>
+  <span class="n">count</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span>
+  <span class="n">ensure_index</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span>
+  <span class="n">disconnect</span><span class="o">/</span><span class="mi">1</span><span class="p">]).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">connect</span><span class="p">(</span><span class="n">atom</span><span class="p">(),</span> <span class="n">list</span><span class="p">(),</span> <span class="nn">proplists</span><span class="p">:</span><span class="nf">proplist</span><span class="p">(),</span> <span class="nn">proplists</span><span class="p">:</span><span class="nf">proplist</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="p">{</span><span class="n">ok</span><span class="p">,</span> <span class="n">pid</span><span class="p">()}.</span>
+<span class="nf">connect</span><span class="p">(</span><span class="nv">Type</span><span class="p">,</span> <span class="nv">Hosts</span><span class="p">,</span> <span class="nv">TopologyOptions</span><span class="p">,</span> <span class="nv">WorkerOptions</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">connect</span><span class="p">({</span><span class="nv">Type</span><span class="p">,</span> <span class="nv">Hosts</span><span class="p">},</span> <span class="nv">TopologyOptions</span><span class="p">,</span> <span class="nv">WorkerOptions</span><span class="p">).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">insert</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">list</span><span class="p">()</span> <span class="p">|</span> <span class="n">map</span><span class="p">()</span> <span class="p">|</span> <span class="nn">bson</span><span class="p">:</span><span class="nf">document</span><span class="p">())</span> <span class="o">-&gt;</span>
+  <span class="p">{{</span><span class="n">boolean</span><span class="p">(),</span> <span class="n">map</span><span class="p">()},</span> <span class="n">list</span><span class="p">()}.</span>
+<span class="nf">insert</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Document</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">transaction</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span>
+    <span class="k">fun</span><span class="p">(#{</span><span class="n">pool</span> <span class="p">:</span><span class="o">=</span> <span class="nv">Worker</span><span class="p">})</span> <span class="o">-&gt;</span>
+      <span class="nn">mc_worker_api</span><span class="p">:</span><span class="nf">insert</span><span class="p">(</span><span class="nv">Worker</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Document</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span>
+    <span class="p">#{}).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">update</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">selector</span><span class="p">(),</span> <span class="n">map</span><span class="p">(),</span> <span class="n">map</span><span class="p">())</span> <span class="o">-&gt;</span>
+  <span class="p">{</span><span class="n">boolean</span><span class="p">(),</span> <span class="n">map</span><span class="p">()}.</span>
+<span class="nf">update</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Doc</span><span class="p">,</span> <span class="nv">Opts</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nv">Upsert</span> <span class="o">=</span> <span class="nn">maps</span><span class="p">:</span><span class="nb">get</span><span class="p">(</span><span class="n">upsert</span><span class="p">,</span> <span class="nv">Opts</span><span class="p">,</span> <span class="n">false</span><span class="p">),</span>
+  <span class="nv">MultiUpdate</span> <span class="o">=</span> <span class="nn">maps</span><span class="p">:</span><span class="nb">get</span><span class="p">(</span><span class="n">multi</span><span class="p">,</span> <span class="nv">Opts</span><span class="p">,</span> <span class="n">false</span><span class="p">),</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">transaction</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span>
+    <span class="k">fun</span><span class="p">(#{</span><span class="n">pool</span> <span class="p">:</span><span class="o">=</span> <span class="nv">Worker</span><span class="p">})</span> <span class="o">-&gt;</span>
+      <span class="nn">mc_worker_api</span><span class="p">:</span><span class="nf">update</span><span class="p">(</span><span class="nv">Worker</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Doc</span><span class="p">,</span> <span class="nv">Upsert</span><span class="p">,</span> <span class="nv">MultiUpdate</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span> <span class="nv">Opts</span><span class="p">).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">delete</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">selector</span><span class="p">())</span> <span class="o">-&gt;</span>
+  <span class="p">{</span><span class="n">boolean</span><span class="p">(),</span> <span class="n">map</span><span class="p">()}.</span>
+<span class="nf">delete</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">transaction</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span>
+    <span class="k">fun</span><span class="p">(#{</span><span class="n">pool</span> <span class="p">:</span><span class="o">=</span> <span class="nv">Worker</span><span class="p">})</span> <span class="o">-&gt;</span>
+      <span class="nn">mc_worker_api</span><span class="p">:</span><span class="nf">delete</span><span class="p">(</span><span class="nv">Worker</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span>
+    <span class="p">#{}).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">find</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">selector</span><span class="p">(),</span> <span class="n">projector</span><span class="p">())</span> <span class="o">-&gt;</span>
+  <span class="p">{</span><span class="n">ok</span><span class="p">,</span> <span class="n">cursor</span><span class="p">()}</span> <span class="p">|</span> <span class="p">[].</span>
+<span class="nf">find</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="n">find</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">find</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">selector</span><span class="p">(),</span> <span class="n">projector</span><span class="p">(),</span> <span class="n">integer</span><span class="p">(),</span> <span class="n">integer</span><span class="p">())</span> <span class="o">-&gt;</span>
+  <span class="p">{</span><span class="n">ok</span><span class="p">,</span> <span class="n">cursor</span><span class="p">()}</span> <span class="p">|</span> <span class="p">[].</span>
+<span class="nf">find</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">,</span> <span class="nv">Skip</span><span class="p">,</span> <span class="nv">Batchsize</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">transaction_query</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span>
+    <span class="k">fun</span><span class="p">(</span><span class="nv">Conf</span> <span class="o">=</span> <span class="p">#{</span><span class="n">pool</span> <span class="p">:</span><span class="o">=</span> <span class="nv">Worker</span><span class="p">})</span> <span class="o">-&gt;</span>
+      <span class="nv">Query</span> <span class="o">=</span> <span class="nn">mongoc</span><span class="p">:</span><span class="nf">find_query</span><span class="p">(</span><span class="nv">Conf</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">,</span> <span class="nv">Skip</span><span class="p">,</span> <span class="nv">Batchsize</span><span class="p">),</span>
+      <span class="nn">mc_worker_api</span><span class="p">:</span><span class="nf">find</span><span class="p">(</span><span class="nv">Worker</span><span class="p">,</span> <span class="nv">Query</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span> <span class="p">#{}).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">find_one</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">selector</span><span class="p">(),</span> <span class="n">projector</span><span class="p">())</span> <span class="o">-&gt;</span>
+  <span class="n">map</span><span class="p">()</span> <span class="p">|</span> <span class="n">undefined</span><span class="p">.</span>
+<span class="nf">find_one</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="n">find_one</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">,</span> <span class="mi">0</span><span class="p">).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">find_one</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">selector</span><span class="p">(),</span> <span class="n">projector</span><span class="p">(),</span> <span class="n">integer</span><span class="p">())</span> <span class="o">-&gt;</span>
+  <span class="n">map</span><span class="p">()</span> <span class="p">|</span> <span class="n">undefined</span><span class="p">.</span>
+<span class="nf">find_one</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">,</span> <span class="nv">Skip</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">transaction_query</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span>
+    <span class="k">fun</span><span class="p">(</span><span class="nv">Conf</span> <span class="o">=</span> <span class="p">#{</span><span class="n">pool</span> <span class="p">:</span><span class="o">=</span> <span class="nv">Worker</span><span class="p">})</span> <span class="o">-&gt;</span>
+      <span class="nv">Query</span> <span class="o">=</span> <span class="nn">mongoc</span><span class="p">:</span><span class="nf">find_one_query</span><span class="p">(</span><span class="nv">Conf</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Projector</span><span class="p">,</span> <span class="nv">Skip</span><span class="p">),</span>
+      <span class="nn">mc_worker_api</span><span class="p">:</span><span class="nf">find_one</span><span class="p">(</span><span class="nv">Worker</span><span class="p">,</span> <span class="nv">Query</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span> <span class="p">#{}).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">count</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="n">selector</span><span class="p">(),</span> <span class="n">integer</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="n">integer</span><span class="p">().</span>
+<span class="nf">count</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Limit</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">transaction_query</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span>
+    <span class="k">fun</span><span class="p">(</span><span class="nv">Conf</span> <span class="o">=</span> <span class="p">#{</span><span class="n">pool</span> <span class="p">:</span><span class="o">=</span> <span class="nv">Worker</span><span class="p">})</span> <span class="o">-&gt;</span>
+      <span class="nv">Query</span> <span class="o">=</span> <span class="nn">mongoc</span><span class="p">:</span><span class="nf">count_query</span><span class="p">(</span><span class="nv">Conf</span><span class="p">,</span> <span class="nv">Collection</span><span class="p">,</span> <span class="nv">Selector</span><span class="p">,</span> <span class="nv">Limit</span><span class="p">),</span>
+      <span class="nn">mc_worker_api</span><span class="p">:</span><span class="nf">count</span><span class="p">(</span><span class="nv">Worker</span><span class="p">,</span> <span class="nv">Query</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span>
+    <span class="p">#{}).</span>
+
+<span class="c">%% @doc Creates index on collection according to given spec.</span>
+<span class="c">%%      The key specification is a bson documents with the following fields:</span>
+<span class="c">%%      key      :: bson document, for e.g. {field, 1, other, -1, location, 2d}, &lt;strong&gt;required&lt;/strong&gt;</span>
+<span class="p">-</span><span class="ni">spec</span> <span class="n">ensure_index</span><span class="p">(</span><span class="n">pid</span><span class="p">()</span> <span class="p">|</span> <span class="n">atom</span><span class="p">(),</span> <span class="n">collection</span><span class="p">(),</span> <span class="nn">bson</span><span class="p">:</span><span class="nf">document</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="n">ok</span> <span class="p">|</span> <span class="p">{</span><span class="n">error</span><span class="p">,</span> <span class="n">any</span><span class="p">()}.</span>
+<span class="nf">ensure_index</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span> <span class="nv">Coll</span><span class="p">,</span> <span class="nv">IndexSpec</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">transaction</span><span class="p">(</span><span class="nv">Topology</span><span class="p">,</span>
+    <span class="k">fun</span><span class="p">(#{</span><span class="n">pool</span> <span class="p">:</span><span class="o">=</span> <span class="nv">Worker</span><span class="p">})</span> <span class="o">-&gt;</span>
+      <span class="nn">mc_worker_api</span><span class="p">:</span><span class="nf">ensure_index</span><span class="p">(</span><span class="nv">Worker</span><span class="p">,</span> <span class="nv">Coll</span><span class="p">,</span> <span class="nv">IndexSpec</span><span class="p">)</span>
+    <span class="k">end</span><span class="p">,</span> <span class="p">#{}).</span>
+
+<span class="p">-</span><span class="ni">spec</span> <span class="n">disconnect</span><span class="p">(</span><span class="n">atom</span><span class="p">()</span> <span class="p">|</span> <span class="n">pid</span><span class="p">())</span> <span class="o">-&gt;</span> <span class="n">ok</span><span class="p">.</span>
+<span class="nf">disconnect</span><span class="p">(</span><span class="nv">Topology</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nn">mongoc</span><span class="p">:</span><span class="nf">disconnect</span><span class="p">(</span><span class="nv">Topology</span><span class="p">).</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#java">Java</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright 2002-2017 the original author or authors.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="cm"> * you may not use this file except in compliance with the License.</span>
+<span class="cm"> * You may obtain a copy of the License at</span>
+<span class="cm"> *</span>
+<span class="cm"> *      https://www.apache.org/licenses/LICENSE-2.0</span>
+<span class="cm"> *</span>
+<span class="cm"> * Unless required by applicable law or agreed to in writing, software</span>
+<span class="cm"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="cm"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="cm"> * See the License for the specific language governing permissions and</span>
+<span class="cm"> * limitations under the License.</span>
+<span class="cm"> */</span>
+
+<span class="kn">package</span> <span class="nn">org.springframework.beans</span><span class="p">;</span>
+
+<span class="kn">import</span> <span class="nn">org.springframework.core.NestedRuntimeException</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.lang.Nullable</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Abstract superclass for all exceptions thrown in the beans package</span>
+<span class="cm"> * and subpackages.</span>
+<span class="cm"> *</span>
+<span class="cm"> * &lt;p&gt;Note that this is a runtime (unchecked) exception. Beans exceptions</span>
+<span class="cm"> * are usually fatal; there is no reason for them to be checked.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @author Rod Johnson</span>
+<span class="cm"> * @author Juergen Hoeller</span>
+<span class="cm"> */</span>
+<span class="nd">@SuppressWarnings</span><span class="p">(</span><span class="s">&quot;serial&quot;</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">BeansException</span> <span class="kd">extends</span> <span class="n">NestedRuntimeException</span> <span class="p">{</span>
+
+	<span class="cm">/**</span>
+<span class="cm">	 * Create a new BeansException with the specified message.</span>
+<span class="cm">	 * @param msg the detail message</span>
+<span class="cm">	 */</span>
+	<span class="kd">public</span> <span class="nf">BeansException</span><span class="p">(</span><span class="n">String</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+		<span class="kd">super</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="cm">/**</span>
+<span class="cm">	 * Create a new BeansException with the specified message</span>
+<span class="cm">	 * and root cause.</span>
+<span class="cm">	 * @param msg the detail message</span>
+<span class="cm">	 * @param cause the root cause</span>
+<span class="cm">	 */</span>
+	<span class="kd">public</span> <span class="nf">BeansException</span><span class="p">(</span><span class="nd">@Nullable</span> <span class="n">String</span> <span class="n">msg</span><span class="p">,</span> <span class="nd">@Nullable</span> <span class="n">Throwable</span> <span class="n">cause</span><span class="p">)</span> <span class="p">{</span>
+		<span class="kd">super</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">cause</span><span class="p">);</span>
+	<span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#javascript">Javascript</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="kr">import</span> <span class="nx">Sort</span> <span class="nx">from</span> <span class="s1">&#39;../Sort&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">MinHeap</span> <span class="nx">from</span> <span class="s1">&#39;../../../data-structures/heap/MinHeap&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="kr">class</span> <span class="nx">HeapSort</span> <span class="kr">extends</span> <span class="nx">Sort</span> <span class="p">{</span>
+  <span class="nx">sort</span><span class="p">(</span><span class="nx">originalArray</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">sortedArray</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="kr">const</span> <span class="nx">minHeap</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MinHeap</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="nx">compareCallback</span><span class="p">);</span>
+
+    <span class="c1">// Insert all array elements to the heap.</span>
+    <span class="nx">originalArray</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">element</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="c1">// Call visiting callback.</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="nx">visitingCallback</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+
+      <span class="nx">minHeap</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">element</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="c1">// Now we have min heap with minimal element always on top.</span>
+    <span class="c1">// Let&#39;s poll that minimal element one by one and thus form the sorted array.</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="nx">minHeap</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">())</span> <span class="p">{</span>
+      <span class="kr">const</span> <span class="nx">nextMinElement</span> <span class="o">=</span> <span class="nx">minHeap</span><span class="p">.</span><span class="nx">poll</span><span class="p">();</span>
+
+      <span class="c1">// Call visiting callback.</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="nx">visitingCallback</span><span class="p">(</span><span class="nx">nextMinElement</span><span class="p">);</span>
+
+      <span class="nx">sortedArray</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">nextMinElement</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="nx">sortedArray</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#php">Php</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="cp">&lt;?php</span>
+
+<span class="k">namespace</span> <span class="nx">App</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">Illuminate\Contracts\Auth\MustVerifyEmail</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Foundation\Auth\User</span> <span class="k">as</span> <span class="nx">Authenticatable</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Notifications\Notifiable</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">User</span> <span class="k">extends</span> <span class="nx">Authenticatable</span>
+<span class="p">{</span>
+    <span class="k">use</span> <span class="nx">Notifiable</span><span class="p">;</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * The attributes that are mass assignable.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @var array</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$fillable</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;password&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * The attributes that should be hidden for arrays.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @var array</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$hidden</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="s1">&#39;remember_token&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * The attributes that should be cast to native types.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @var array</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$casts</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;email_verified_at&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;datetime&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#python">Python</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="k">class</span> <span class="nc">AwesomeClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Just an awesome class &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Say hello to the world &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;hello &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#ruby">Ruby</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="c1"># frozen_string_literal: true</span>
+
+<span class="nb">require</span> <span class="s2">&quot;active_support/core_ext/string/output_safety&quot;</span>
+
+<span class="k">module</span> <span class="nn">ActionView</span>
+  <span class="c1"># Used as a buffer for views</span>
+  <span class="c1">#</span>
+  <span class="c1"># The main difference between this and ActiveSupport::SafeBuffer</span>
+  <span class="c1"># is for the methods `&lt;&lt;` and `safe_expr_append=` the inputs are</span>
+  <span class="c1"># checked for nil before they are assigned and `to_s` is called on</span>
+  <span class="c1"># the input. For example:</span>
+  <span class="c1">#</span>
+  <span class="c1">#   obuf = ActionView::OutputBuffer.new &quot;hello&quot;</span>
+  <span class="c1">#   obuf &lt;&lt; 5</span>
+  <span class="c1">#   puts obuf # =&gt; &quot;hello5&quot;</span>
+  <span class="c1">#</span>
+  <span class="c1">#   sbuf = ActiveSupport::SafeBuffer.new &quot;hello&quot;</span>
+  <span class="c1">#   sbuf &lt;&lt; 5</span>
+  <span class="c1">#   puts sbuf # =&gt; &quot;hello\u0005&quot;</span>
+  <span class="c1">#</span>
+  <span class="k">class</span> <span class="nc">OutputBuffer</span> <span class="o">&lt;</span> <span class="no">ActiveSupport</span><span class="o">::</span><span class="no">SafeBuffer</span> <span class="c1">#:nodoc:</span>
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+      <span class="k">super</span>
+      <span class="n">encode!</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">&lt;&lt;</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">self</span> <span class="k">if</span> <span class="n">value</span><span class="o">.</span><span class="n">nil?</span>
+      <span class="k">super</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">to_s</span><span class="p">)</span>
+    <span class="k">end</span>
+    <span class="k">alias</span> <span class="ss">:append</span><span class="o">=</span> <span class="ss">:&lt;&lt;</span>
+
+    <span class="k">def</span> <span class="nf">safe_expr_append</span><span class="o">=</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nb">self</span> <span class="k">if</span> <span class="n">val</span><span class="o">.</span><span class="n">nil?</span>
+      <span class="n">safe_concat</span> <span class="n">val</span><span class="o">.</span><span class="n">to_s</span>
+    <span class="k">end</span>
+
+    <span class="k">alias</span> <span class="ss">:safe_append</span><span class="o">=</span> <span class="ss">:safe_concat</span>
+  <span class="k">end</span>
+
+  <span class="k">class</span> <span class="nc">StreamingBuffer</span> <span class="c1">#:nodoc:</span>
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+      <span class="vi">@block</span> <span class="o">=</span> <span class="n">block</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">&lt;&lt;</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">to_s</span>
+      <span class="n">value</span> <span class="o">=</span> <span class="no">ERB</span><span class="o">::</span><span class="no">Util</span><span class="o">.</span><span class="n">h</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">unless</span> <span class="n">value</span><span class="o">.</span><span class="n">html_safe?</span>
+      <span class="vi">@block</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">end</span>
+    <span class="k">alias</span> <span class="ss">:concat</span>  <span class="ss">:&lt;&lt;</span>
+    <span class="k">alias</span> <span class="ss">:append</span><span class="o">=</span> <span class="ss">:&lt;&lt;</span>
+
+    <span class="k">def</span> <span class="nf">safe_concat</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="vi">@block</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">to_s</span><span class="p">)</span>
+    <span class="k">end</span>
+    <span class="k">alias</span> <span class="ss">:safe_append</span><span class="o">=</span> <span class="ss">:safe_concat</span>
+
+    <span class="k">def</span> <span class="nf">html_safe?</span>
+      <span class="kp">true</span>
+    <span class="k">end</span>
+
+    <span class="k">def</span> <span class="nf">html_safe</span>
+      <span class="nb">self</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#rust">Rust</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">env</span>::<span class="o">*</span><span class="p">;</span><span class="w"></span>
+<span class="k">use</span><span class="w"> </span><span class="n">std</span>::<span class="n">ffi</span>::<span class="p">{</span><span class="n">OsStr</span><span class="p">,</span><span class="w"> </span><span class="n">OsString</span><span class="p">};</span><span class="w"></span>
+
+<span class="k">use</span><span class="w"> </span><span class="n">rand</span>::<span class="n">distributions</span>::<span class="n">Alphanumeric</span><span class="p">;</span><span class="w"></span>
+<span class="k">use</span><span class="w"> </span><span class="n">rand</span>::<span class="p">{</span><span class="n">thread_rng</span><span class="p">,</span><span class="w"> </span><span class="n">Rng</span><span class="p">};</span><span class="w"></span>
+
+<span class="k">fn</span> <span class="nf">make_rand_name</span><span class="p">()</span><span class="w"> </span>-&gt; <span class="nc">OsString</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">rng</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">thread_rng</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;TEST{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rng</span><span class="p">.</span><span class="n">sample_iter</span><span class="p">(</span><span class="o">&amp;</span><span class="n">Alphanumeric</span><span class="p">).</span><span class="n">take</span><span class="p">(</span><span class="mi">10</span><span class="p">).</span><span class="n">collect</span>::<span class="o">&lt;</span><span class="nb">String</span><span class="o">&gt;</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OsString</span>::<span class="n">from</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">assert</span><span class="o">!</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">).</span><span class="n">is_none</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="n">n</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="k">fn</span> <span class="nf">eq</span><span class="p">(</span><span class="n">a</span>: <span class="nb">Option</span><span class="o">&lt;</span><span class="n">OsString</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">b</span>: <span class="nb">Option</span><span class="o">&lt;&amp;</span><span class="kt">str</span><span class="o">&gt;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">assert_eq</span><span class="o">!</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">as_ref</span><span class="p">().</span><span class="n">map</span><span class="p">(</span><span class="o">|</span><span class="n">s</span><span class="o">|</span><span class="w"> </span><span class="o">&amp;**</span><span class="n">s</span><span class="p">),</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">map</span><span class="p">(</span><span class="n">OsStr</span>::<span class="n">new</span><span class="p">).</span><span class="n">map</span><span class="p">(</span><span class="o">|</span><span class="n">s</span><span class="o">|</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">s</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#[test]</span><span class="w"></span>
+<span class="k">fn</span> <span class="nf">test_set_var</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_rand_name</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;VALUE&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">eq</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="s">&quot;VALUE&quot;</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#[test]</span><span class="w"></span>
+<span class="k">fn</span> <span class="nf">test_remove_var</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_rand_name</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;VALUE&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">remove_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">eq</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="nb">None</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#[test]</span><span class="w"></span>
+<span class="k">fn</span> <span class="nf">test_set_var_overwrite</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_rand_name</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">eq</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">eq</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#[test]</span><span class="w"></span>
+<span class="cp">#[cfg_attr(target_os = </span><span class="s">&quot;emscripten&quot;</span><span class="cp">, ignore)]</span><span class="w"></span>
+<span class="k">fn</span> <span class="nf">test_var_big</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">.</span><span class="n">to_string</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">s</span><span class="p">.</span><span class="n">push_str</span><span class="p">(</span><span class="s">&quot;aaaaaaaaaa&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_rand_name</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">s</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">eq</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="o">&amp;</span><span class="n">s</span><span class="p">));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#[test]</span><span class="w"></span>
+<span class="cp">#[cfg_attr(target_os = </span><span class="s">&quot;emscripten&quot;</span><span class="cp">, ignore)]</span><span class="w"></span>
+<span class="k">fn</span> <span class="nf">test_env_set_get_huge</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_rand_name</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;x&quot;</span><span class="p">.</span><span class="n">repeat</span><span class="p">(</span><span class="mi">10000</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">s</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">eq</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="nb">Some</span><span class="p">(</span><span class="o">&amp;</span><span class="n">s</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="n">remove_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">eq</span><span class="p">(</span><span class="n">var_os</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="nb">None</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cp">#[test]</span><span class="w"></span>
+<span class="k">fn</span> <span class="nf">test_env_set_var</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_rand_name</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vars_os</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_var</span><span class="p">(</span><span class="o">&amp;</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;VALUE&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">assert</span><span class="o">!</span><span class="p">(</span><span class="o">!</span><span class="n">e</span><span class="p">.</span><span class="n">any</span><span class="p">(</span><span class="o">|</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="o">|</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">k</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">n</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">v</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;VALUE&quot;</span><span class="w"> </span><span class="p">}));</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">assert</span><span class="o">!</span><span class="p">(</span><span class="n">vars_os</span><span class="p">().</span><span class="n">any</span><span class="p">(</span><span class="o">|</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="o">|</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">k</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">n</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">&amp;*</span><span class="n">v</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;VALUE&quot;</span><span class="w"> </span><span class="p">}));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#sh">Sh</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
+<span class="k">if</span> <span class="o">[</span> -z <span class="s2">&quot;</span><span class="nv">$BASH_IT</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span>
+<span class="k">then</span>
+  <span class="nv">BASH_IT</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.bash_it&quot;</span>
+<span class="k">fi</span>
+
+<span class="k">case</span> <span class="nv">$OSTYPE</span> in
+  darwin*<span class="o">)</span>
+    <span class="nv">CONFIG_FILE</span><span class="o">=</span>.bash_profile
+    <span class="p">;;</span>
+  *<span class="o">)</span>
+    <span class="nv">CONFIG_FILE</span><span class="o">=</span>.bashrc
+    <span class="p">;;</span>
+<span class="k">esac</span>
+
+<span class="nv">BACKUP_FILE</span><span class="o">=</span><span class="nv">$CONFIG_FILE</span>.bak
+
+<span class="k">if</span> <span class="o">[</span> ! -e <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$BACKUP_FILE</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="nb">echo</span> -e <span class="s2">&quot;\033[0;33mBackup file </span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$BACKUP_FILE</span><span class="s2"> not found.\033[0m&quot;</span> &gt;<span class="p">&amp;</span><span class="m">2</span>
+
+  <span class="nb">test</span> -w <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$CONFIG_FILE</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span>
+    mv <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$CONFIG_FILE</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$CONFIG_FILE</span><span class="s2">.uninstall&quot;</span> <span class="o">&amp;&amp;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\033[0;32mMoved your </span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$CONFIG_FILE</span><span class="s2"> to </span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$CONFIG_FILE</span><span class="s2">.uninstall.\033[0m&quot;</span>
+<span class="k">else</span>
+  <span class="nb">test</span> -w <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$BACKUP_FILE</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span>
+    cp -a <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$BACKUP_FILE</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$CONFIG_FILE</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span>
+    rm <span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/</span><span class="nv">$BACKUP_FILE</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\033[0;32mYour original </span><span class="nv">$CONFIG_FILE</span><span class="s2"> has been restored.\033[0m&quot;</span>
+<span class="k">fi</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> -e <span class="s2">&quot;\033[0;32mUninstallation finished successfully! Sorry to see you go!\033[0m&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;Final steps to complete the uninstallation:&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;  -&gt; Remove the </span><span class="nv">$BASH_IT</span><span class="s2"> folder&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;  -&gt; Open a new shell/tab/terminal&quot;</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="card shadow-sm border-0 rnd mb-3">
+    <div class="card-body">
+      <h6 class="text-monospace font-weight-bold mb-3"><a id="#typescript">Typescript</a></h6>
+        <div class="code">
+<div class="vim"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> * Searches Wikipedia database</span>
+<span class="cm"> */</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">IncomingMessage</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;http&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">request</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;https&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="p">(</span><span class="nx">res</span>: <span class="kt">IncomingMessage</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="p">{</span> <span class="nx">statusCode</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">res</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">chunk</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">statusCode</span> <span class="o">!==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="sb">`[Request status </span><span class="si">${</span><span class="nx">statusCode</span><span class="si">}</span><span class="sb">] Not accepted`</span><span class="p">));</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">)</span>
+           <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;uncaughtException&#39;</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">)</span>
+           <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span>: <span class="kt">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">chunk</span> <span class="o">+=</span> <span class="nx">data</span><span class="p">)</span>
+           <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;end&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+               <span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">chunk</span><span class="p">);</span>
+
+               <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+           <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kr">const</span> <span class="nx">search</span> <span class="o">=</span> <span class="s1">&#39;microsoft&#39;</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">query</span> <span class="o">=</span> <span class="sb">`action=query&amp;format=json&amp;list=search&amp;srsearch=</span><span class="si">${</span><span class="nb">encodeURI</span><span class="p">(</span><span class="nx">search</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="sb">`/w/api.php?</span><span class="si">${</span><span class="nx">query</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">path</span><span class="p">,</span>
+    <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
+    <span class="nx">hostname</span><span class="o">:</span> <span class="s1">&#39;en.wikipedia.org&#39;</span><span class="p">,</span>
+    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">Accept</span><span class="o">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span> <span class="s1">&#39;text/html&#39;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="kr">const</span> <span class="nx">wikipedia</span> <span class="o">=</span> <span class="nx">request</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+
+<span class="nx">wikipedia</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">)</span>
+         <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;response&#39;</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span>
+         <span class="p">.</span><span class="nx">end</span><span class="p">();</span>
+</pre></div>
+
+      </div>
+    </div>
+  </div>
+
+    
+        </div>
+  </div>
+</div>
+
+
+
+    </main>
+
+    
+  </body>
+</html>
