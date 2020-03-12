@@ -7,11 +7,12 @@
 <div class="container pt-3">
   <div class="row" id="styles">
     <div class="d-none d-md-block col-md-2">
-      <ul class="text-monospace">
+      <ul class="text-monospace mb-3">
         {% for lang in langs %}
           <li><a href="#{{ lang.language }}" class="small">{{ lang.language|capitalize }}</a></li>
         {% endfor %}
       </ul>
+      <a class="btn btn-sm btn-outline-primary text-monospace w-100" href="/pygments-styles/static/css/pygments_styles/{{ style }}.css" target="_blank" role="button">Stylesheet</a>
     </div>
 
       <div class="col-sm-10">

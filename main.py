@@ -9,8 +9,11 @@ from jinja2 import Environment, PackageLoader
 
 import os
 
+URL_ROOT = "https://julian-nash.github.io/pygments-styles/"
+
 
 class Snippet(object):
+
 
     def __init__(self, style=None, code=None, language=None, filename=None):
         self.style = style
@@ -28,6 +31,12 @@ class Snippet(object):
 
         return highlight(self.code, lexer, formatter)
 
+    def gen_stylesheet(self):
+
+        formatter = HtmlFormatter(cssclass=self.style)
+
+        return formatter.get_style_defs(f'.{self.style}')
+
 
 def main():
 
@@ -40,7 +49,7 @@ def main():
     # Generate home page html and styles
     styles = sorted(list(get_all_styles()))
 
-    with open("app/lang/python.py", "r") as i:
+    with open("index.py", "r") as i:
         index_code = i.read()
 
     snippets = []
