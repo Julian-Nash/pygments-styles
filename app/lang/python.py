@@ -1,9 +1,9 @@
-class AwesomeClass(object):
-    """ Just an awesome class """
+class HelloWorld(object):
+    """ Hello world class """
 
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
 
-    def say_hello(self):
+    def say_hello(self) -> str:
         """ Say hello to the world """
         return "hello " + self.name
